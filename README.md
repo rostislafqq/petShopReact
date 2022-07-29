@@ -9,3 +9,5 @@
 - css / module css ,
 - react-router-dom ,
 - react-content-loader
+
+![image](https://user-images.githubusercontent.com/97777490/181716918-a7fd9455-2acc-4beb-b954-22923350a00c.png)
