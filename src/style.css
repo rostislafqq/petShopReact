@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+ body{
+    background-color: #b5a884;
+ }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    margin: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__text{
+    color: #333;
+}
+ 
+.header__svg{
+    height: 40px;
+    padding-left: 10px;
+}
+.header__input{
+    position: relative; 
+}
+.header__serch{
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+.header__closeA{
+    position: absolute;
+    right: 15px;
+    top:11px;
+    cursor: pointer;
+}
+.header__close{
+    display: none;
+}
+
+.header__inputTxt{
+    width: 250px;
+    padding: 10px 0px 10px 30px;
+    font-size: 12px;
+    border: 1px solid rgb(0,0,0,0.1);
+
+    border-radius: 20px;
+}
+
+.header__cart{
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 15px;
+ 
+}
+.header__cart:hover .header__price{
+    transition: .3s;
+ color: #fff;
+ border-color: #fff;
+}
+
+.header__cart:hover .header__cartSvg path{
+    transition: .3s;
+    fill: #fff;
+    
+}
+.header__cartSvg {
+    width: 30px;
+    padding-left: 10px;
+}
+ 
+.header__cart:hover {
+    background-color: #333;
+  }
+.header__price{
+    padding-right: 10px ;
+    border-right: 1px solid rgb(152, 50, 50);
+    
+}
+
+
+ 
+
+/*second*/
+.secondPart{
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.secondPart__categoriesUl{
+       display: flex;
+
+}
+.secondPart__categoriesli{
+    font-size: 20px;
+    padding: 10px 15px 10px 15px ;
+    border: 1px solid #333;
+    border-radius: 15px;
+}
+.secondPart__categoriesActiveli{
+    border-color: white;
+    color: white;
+    background-color: #333;
+}
+.secondPart__categoriesli:not(:last-child){
+    margin-right: 30px;
+     
+}
+.secondPart__categoriesli:hover{
+    transition: .3s;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+}
+.secondPart__svg{
+    width: 10px;
+    transform: rotate(90Deg);
+}
+.secondPart__svgA{
+    width: 10px;
+    transform: rotate(-90Deg);
+}
+
+.secondPart__sort{
+    position: relative;
+}
+.secondPart__popUp{
+    position: absolute;
+    right: 0;
+
+}
+
+.secondPart__popUpUlA li{
+    margin:10px 10px 5px 50px ;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.secondPart__popUpUlA li:hover {
+    transition: .2s;
+    color: orange  ;
+}
+.secondPart__popUpUl{display: none;}
+.secondPart__sortI{
+    cursor: pointer;
+    color: orange;
+}
+ 
+.secondPart__popUpUlA{
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 9%);
+    border-radius: 10px;
+    height: 100px;
+}
+
+.secondPart__sortArrow{
+    transform: rotate(180Deg);
+}
+
+/*3 block*/
+
+.thirdPart{
+    margin-top: 100px;
+     
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 30px;
+         
+}
+.thirdPart__Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.thirdPart__CardImg{
+    width: 200px;
+    height: 200px;
+    border:1px rgb(155, 147, 147) solid;
+    border-radius: 10px;
+}
+
+.thirdPart__title{
+    font-size: 19px;
+    margin: 10px 0px 10px 0px;
+}
+.thirdPart__CardNames{
+    display: flex;
+    justify-content: space-around
+}
+.thirdPart__CardName{
+    padding: 12px;
+   
+    font-size: 17px;
+    border: 1px #333 solid;
+    border-bottom-right-radius: 10px;
+    
+}
+.thirdPart__CardName:hover{
+    transition: .3s;
+    opacity: .8;
+    
+}
+ .thirdPart__CardNameActive{
+    background-color: #333;
+    color: white;
+    border-color:#8c2727;
+}
+.thirdPart__btn{
+    width: 200px;
+    height: 30px;
+    color: #333;
+    ;background-color: #fff;
+    font-size: 17px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+.thirdPart__btn:hover{
+    transition: .2s;
+    color: #fff;
+    background-color: #333;
+}
+.thirdPart__btn:active  {
+    transition: .2s;
+    color: rgb(233, 126, 126);
+    background-color: rgb(121, 77, 77);
+}
